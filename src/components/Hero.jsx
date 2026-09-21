@@ -15,7 +15,9 @@ export default function Hero() {
           <h1 className="hero__title">
             Actualízate.
             <br />
-            <em>Cariología… y algo más.</em>
+            <em>
+              Cariología… <span className="hero__title-accent">y algo más.</span>
+            </em>
           </h1>
 
           <p className="hero__subtitle">
