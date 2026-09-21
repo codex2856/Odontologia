@@ -19,8 +19,8 @@ export default function Hero() {
           </h1>
 
           <p className="hero__subtitle">
-            Formación y actualización científica para transformar tu práctica
-            clínica.
+            Actualización académica basada en la evidencia científica para
+            transformar tu práctica clínica.
           </p>
 
           <p className="hero__presenter">

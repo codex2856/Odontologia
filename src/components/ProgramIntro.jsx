@@ -3,7 +3,7 @@ import "./ProgramIntro.css";
 
 const FOCUS_AREAS = [
   "Comprensión actual de la enfermedad de caries",
-  "Diagnóstico y clasificación de lesiones",
+  "Detección y clasificación de lesiones",
   "Evaluación individual del riesgo",
   "Tratamientos mínimamente invasivos",
   "Remineralización",
