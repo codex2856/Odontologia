@@ -7,15 +7,17 @@
   padding-block: 1.6rem;
   transition: padding 0.4s var(--ease-editorial), background 0.4s var(--ease-editorial),
     box-shadow 0.4s var(--ease-editorial), border-color 0.4s var(--ease-editorial);
-  border-bottom: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-hairline-on-ink);
+  box-shadow: 0 8px 30px -20px rgba(69, 42, 92, 0.35);
 }
 
 .site-header--solid {
   padding-block: 1rem;
-  background: rgba(241, 236, 246, 0.86);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom-color: var(--border-hairline-on-ink);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 30px -18px rgba(69, 42, 92, 0.4);
 }
 
 .site-header__inner {
