@@ -1,6 +1,6 @@
 .methodology {
-  background: var(--purple-950);
-  color: var(--white-warm);
+  background: var(--lavender-200);
+  color: var(--purple-900);
 }
 
 .methodology__grid {
@@ -14,18 +14,18 @@
 }
 
 .methodology__item {
-  background: var(--purple-950);
+  background: var(--lavender-200);
   padding: 2.4rem 1.8rem;
   transition: background 0.4s var(--ease-editorial);
 }
 
 .methodology__item:hover {
-  background: var(--purple-900);
+  background: var(--white-pure);
 }
 
 .methodology__icon {
   display: inline-flex;
-  color: var(--purple-300);
+  color: var(--purple-600);
   width: 40px;
   height: 40px;
 }
@@ -38,7 +38,7 @@
 .methodology__item h3 {
   margin-top: 1.3rem;
   font-size: 1.1rem;
-  color: var(--white-warm);
+  color: var(--purple-900);
   font-weight: 500;
 }
 

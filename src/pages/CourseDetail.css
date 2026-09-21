@@ -1,7 +1,7 @@
 .course-detail__hero {
-  background: radial-gradient(120% 100% at 85% 0%, #2E1B3E 0%, var(--purple-950) 55%),
-    var(--purple-950);
-  color: var(--white-warm);
+  background: radial-gradient(120% 100% at 85% 0%, var(--lavender-100) 0%, var(--lavender-200) 55%),
+    var(--lavender-200);
+  color: var(--purple-900);
   padding-top: 9.5rem;
   padding-bottom: 4.5rem;
 }
@@ -17,14 +17,14 @@
 }
 
 .course-detail__back:hover {
-  color: var(--white-warm);
+  color: var(--purple-900);
 }
 
 .course-detail__title {
   margin-top: 1.1rem;
   font-size: clamp(2rem, 1.6rem + 1.8vw, 3.1rem);
   max-width: 24ch;
-  color: var(--white-warm);
+  color: var(--purple-900);
 }
 
 .course-detail__short {

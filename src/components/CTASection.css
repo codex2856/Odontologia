@@ -1,6 +1,6 @@
 .cta {
-  background: linear-gradient(155deg, var(--purple-800), var(--purple-950) 65%);
-  color: var(--white-warm);
+  background: linear-gradient(155deg, var(--lavender-100), var(--lavender-200) 65%);
+  color: var(--purple-900);
   text-align: center;
   overflow: hidden;
 }
@@ -19,7 +19,7 @@
   margin-top: 1.3rem;
   font-size: clamp(2rem, 1.6rem + 1.8vw, 3rem);
   max-width: 20ch;
-  color: var(--white-warm);
+  color: var(--purple-900);
 }
 
 .cta__lede {

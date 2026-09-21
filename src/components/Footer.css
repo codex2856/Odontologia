@@ -1,6 +1,6 @@
 .site-footer {
-  background: var(--purple-950);
-  color: var(--text-on-ink-muted);
+  background: var(--purple-800);
+  color: var(--lavender-200);
   padding-top: var(--space-6);
 }
 
@@ -10,7 +10,7 @@
   gap: var(--space-4);
   align-items: start;
   padding-bottom: var(--space-5);
-  border-bottom: 1px solid var(--border-hairline-on-ink);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .site-footer__logo {

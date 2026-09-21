@@ -33,13 +33,13 @@
 
   /* Semantic tokens */
   --bg-page: var(--white-warm);
-  --bg-ink: var(--purple-950);
+  --bg-ink: var(--lavender-200);
   --text-ink: var(--graphite-900);
   --text-muted: var(--graphite-500);
-  --text-on-ink: var(--lavender-100);
-  --text-on-ink-muted: #B7ACC6;
+  --text-on-ink: var(--purple-900);
+  --text-on-ink-muted: var(--purple-700);
   --border-hairline: rgba(30, 27, 34, 0.1);
-  --border-hairline-on-ink: rgba(255, 255, 255, 0.14);
+  --border-hairline-on-ink: rgba(69, 42, 92, 0.16);
   --accent: var(--purple-600);
   --accent-soft: var(--lavender-200);
 
@@ -178,7 +178,7 @@ section {
 }
 
 .eyebrow--on-ink {
-  color: var(--lavender-200);
+  color: var(--purple-600);
 }
 
 .section-heading {
@@ -188,7 +188,7 @@ section {
 }
 
 .section-heading--on-ink {
-  color: var(--white-warm);
+  color: var(--text-on-ink);
 }
 
 .section-lede {
@@ -241,23 +241,23 @@ section {
 }
 
 .btn-primary {
-  background: var(--lavender-100);
-  color: var(--purple-950);
+  background: var(--purple-700);
+  color: var(--white-warm);
 }
 
 .btn-primary:hover {
-  background: var(--white-pure);
+  background: var(--purple-600);
 }
 
 .btn-outline {
   background: transparent;
-  color: var(--white-warm);
-  border-color: rgba(250, 248, 246, 0.4);
+  color: var(--purple-800);
+  border-color: rgba(69, 42, 92, 0.35);
 }
 
 .btn-outline:hover {
-  border-color: var(--white-warm);
-  background: rgba(250, 248, 246, 0.06);
+  border-color: var(--purple-700);
+  background: rgba(69, 42, 92, 0.06);
 }
 
 .btn-dark {
