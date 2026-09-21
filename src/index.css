@@ -1,0 +1,370 @@
+/* =========================================================
+   Actualízate. Cariología — Design tokens & global styles
+   ========================================================= */
+
+:root {
+  /* Purples */
+  --purple-950: #170D1F;
+  --purple-900: #241531;
+  --purple-800: #2F1B40;
+  --purple-700: #452A5C;
+  --purple-600: #5B3878;
+  --purple-500: #7A529B;
+  --purple-300: #A98FC0;
+
+  /* Lavender */
+  --lavender-200: #E5DEEF;
+  --lavender-100: #F1ECF6;
+
+  /* Graphite / neutrals */
+  --graphite-900: #1E1B22;
+  --graphite-700: #423E48;
+  --graphite-500: #6B6672;
+  --graphite-300: #A7A2AE;
+
+  /* Silver */
+  --silver-500: #ADACB8;
+  --silver-300: #CFCED8;
+  --silver-100: #E7E6EC;
+
+  /* Warm white / surfaces */
+  --white-warm: #FAF8F6;
+  --white-pure: #FFFFFF;
+
+  /* Semantic tokens */
+  --bg-page: var(--white-warm);
+  --bg-ink: var(--purple-950);
+  --text-ink: var(--graphite-900);
+  --text-muted: var(--graphite-500);
+  --text-on-ink: var(--lavender-100);
+  --text-on-ink-muted: #B7ACC6;
+  --border-hairline: rgba(30, 27, 34, 0.1);
+  --border-hairline-on-ink: rgba(255, 255, 255, 0.14);
+  --accent: var(--purple-600);
+  --accent-soft: var(--lavender-200);
+
+  /* Typography */
+  --font-display: "Cormorant Garamond", "Georgia", serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Rhythm */
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1.25rem;
+  --space-4: 2rem;
+  --space-5: 3.25rem;
+  --space-6: 5.25rem;
+  --space-7: 8.5rem;
+
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+
+  --max-width: 1200px;
+
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-page);
+  color: var(--text-ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: 0.002em;
+}
+
+p {
+  margin: 0;
+}
+
+::selection {
+  background: var(--purple-600);
+  color: var(--white-warm);
+}
+
+/* =========================================================
+   Layout utilities
+   ========================================================= */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-inline: var(--space-3);
+  }
+}
+
+section {
+  position: relative;
+}
+
+.section-pad {
+  padding-block: var(--space-7);
+}
+
+@media (max-width: 900px) {
+  .section-pad {
+    padding-block: var(--space-6);
+  }
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+.eyebrow--on-ink {
+  color: var(--lavender-200);
+}
+
+.section-heading {
+  font-size: clamp(2rem, 1.6rem + 1.8vw, 3.1rem);
+  color: var(--text-ink);
+  max-width: 18ch;
+}
+
+.section-heading--on-ink {
+  color: var(--white-warm);
+}
+
+.section-lede {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 58ch;
+  line-height: 1.75;
+}
+
+.section-lede--on-ink {
+  color: var(--text-on-ink-muted);
+}
+
+.section-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+@media (max-width: 900px) {
+  .section-top {
+    margin-bottom: var(--space-5);
+  }
+}
+
+/* =========================================================
+   Buttons
+   ========================================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.95rem 1.9rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border: 1px solid transparent;
+  transition: background 0.35s var(--ease-editorial), color 0.35s var(--ease-editorial),
+    border-color 0.35s var(--ease-editorial), transform 0.35s var(--ease-editorial);
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background: var(--lavender-100);
+  color: var(--purple-950);
+}
+
+.btn-primary:hover {
+  background: var(--white-pure);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white-warm);
+  border-color: rgba(250, 248, 246, 0.4);
+}
+
+.btn-outline:hover {
+  border-color: var(--white-warm);
+  background: rgba(250, 248, 246, 0.06);
+}
+
+.btn-dark {
+  background: var(--purple-950);
+  color: var(--white-warm);
+}
+
+.btn-dark:hover {
+  background: var(--purple-800);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--purple-800);
+  border-color: var(--border-hairline);
+  padding: 0.7rem 1.3rem;
+  font-size: 0.85rem;
+}
+
+.btn-ghost:hover {
+  border-color: var(--purple-600);
+  color: var(--purple-600);
+}
+
+.btn-whatsapp {
+  background: var(--purple-600);
+  color: var(--white-warm);
+}
+
+.btn-whatsapp:hover {
+  background: var(--purple-500);
+}
+
+/* =========================================================
+   Scroll reveal
+   ========================================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.9s var(--ease-editorial), transform 0.9s var(--ease-editorial);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =========================================================
+   Focus states (accessibility)
+   ========================================================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--purple-500);
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   Visually hidden (skip link target labels, etc.)
+   ========================================================= */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--space-3);
+  top: -60px;
+  background: var(--purple-950);
+  color: var(--white-warm);
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--radius-sm);
+  z-index: 1000;
+  transition: top 0.25s ease;
+}
+
+.skip-link:focus {
+  top: var(--space-3);
+}
