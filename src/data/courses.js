@@ -11,9 +11,10 @@
 export const TBD = "Información próximamente";
 
 export const COMMON_PROGRAM_INFO = {
-  modalidad: "Clases online en tiempo real",
+  modalidad: "Clases en vivo por Zoom",
   materialApoyo: "Material de apoyo incluido",
-  grabaciones: "Grabaciones disponibles durante una semana",
+  grabaciones:
+    "Grabaciones alojadas en YouTube como videos privados, exclusivos para los alumnos del curso",
   certificado: "Certificado digital de participación",
   aval:
     "Aval del Departamento de Educación Continua de la Facultad de Odontología de la Universidad Central de Venezuela (UCV)",

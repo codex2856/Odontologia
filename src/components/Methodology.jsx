@@ -43,8 +43,8 @@ const ICONS = {
 const ITEMS = [
   {
     icon: "live",
-    title: "Clases online en tiempo real",
-    desc: "Encuentros formativos en vivo, con espacio para preguntas y discusión clínica.",
+    title: "Clases en vivo por Zoom",
+    desc: "Encuentros formativos en vivo por Zoom, con espacio para preguntas y discusión clínica.",
   },
   {
     icon: "material",
@@ -53,8 +53,8 @@ const ITEMS = [
   },
   {
     icon: "recordings",
-    title: "Grabaciones disponibles",
-    desc: "Acceso a las grabaciones durante una semana después de cada sesión.",
+    title: "Grabaciones en YouTube",
+    desc: "Las clases quedan grabadas y disponibles en YouTube como videos privados, exclusivos para los alumnos del curso.",
   },
   {
     icon: "certificate",

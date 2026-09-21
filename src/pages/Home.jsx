@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Hero from "../components/Hero";
+import EducationalContent from "../components/EducationalContent";
 import ProgramIntro from "../components/ProgramIntro";
 import CourseCatalog from "../components/CourseCatalog";
 import Methodology from "../components/Methodology";
@@ -24,6 +25,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <EducationalContent />
       <ProgramIntro />
       <CourseCatalog />
       <Methodology />

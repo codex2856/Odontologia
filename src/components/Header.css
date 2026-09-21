@@ -43,7 +43,7 @@
 
 .site-header__nav ul {
   display: flex;
-  gap: var(--space-4);
+  gap: 1.5rem;
 }
 
 .site-header__nav a {

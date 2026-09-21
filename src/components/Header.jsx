@@ -5,6 +5,7 @@ import "./Header.css";
 
 const NAV_ITEMS = [
   { label: "Inicio", href: "#inicio" },
+  { label: "Divulgación", href: "#divulgacion" },
   { label: "Cursos", href: "#cursos" },
   { label: "Sobre mí", href: "#docente" },
   { label: "Testimonios", href: "#testimonios" },

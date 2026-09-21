@@ -10,3 +10,14 @@ export function getWhatsAppLink(message = WHATSAPP_DEFAULT_MESSAGE) {
   const encoded = encodeURIComponent(message);
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`;
 }
+
+// Usuario de Instagram donde se comparte el contenido de divulgación
+// científica (publicaciones, Reels y transmisiones en vivo).
+// TODO: sustituir por el usuario real, por ejemplo: "actualizate.cariologia".
+export const INSTAGRAM_USERNAME = "";
+
+export function getInstagramLink() {
+  return INSTAGRAM_USERNAME
+    ? `https://instagram.com/${INSTAGRAM_USERNAME}`
+    : "#";
+}

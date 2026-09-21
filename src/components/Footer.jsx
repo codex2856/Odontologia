@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { getInstagramLink } from "../config/contact";
 import "./Footer.css";
 
 export default function Footer() {
@@ -14,15 +15,19 @@ export default function Footer() {
 
         <nav className="site-footer__nav" aria-label="Navegación de pie de página">
           <Link to="/#inicio">Inicio</Link>
+          <Link to="/#divulgacion">Divulgación</Link>
           <Link to="/#cursos">Cursos</Link>
           <Link to="/#docente">Sobre mí</Link>
           <Link to="/#testimonios">Testimonios</Link>
           <Link to="/#contacto">Contacto</Link>
         </nav>
 
-        <p className="site-footer__credit">
-          Maglynert Montero Baptista — Formación en Cariología
-        </p>
+        <div className="site-footer__credit">
+          <p>Maglynert Montero Baptista — Formación en Cariología</p>
+          <a href={getInstagramLink()} target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
+        </div>
       </div>
 
       <div className="container site-footer__bottom">

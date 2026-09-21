@@ -24,7 +24,7 @@ src/
   components/   Componentes reutilizables (Header, Hero, tarjetas de curso, etc.)
   pages/        Vistas enrutadas: Home y CourseDetail
   data/         courses.js — catálogo de los 10 cursos (única fuente de datos)
-  config/       contact.js — número de WhatsApp y mensaje predeterminado
+  config/       contact.js — WhatsApp, Instagram y mensaje predeterminado
   hooks/        useScrollReveal, useScrollHeader
 ```
 
@@ -32,6 +32,8 @@ src/
 
 - **WhatsApp**: sustituir `WHATSAPP_NUMBER` en `src/config/contact.js` por el
   número real en formato internacional (ej. `"584121234567"`).
+- **Instagram**: sustituir `INSTAGRAM_USERNAME` en `src/config/contact.js`
+  por el usuario real (ej. `"actualizate.cariologia"`).
 - **Fotografía de la docente**: reemplazar los marcadores de posición en el
   Hero (`src/components/Hero.jsx`) y en "Sobre Maglynert"
   (`src/components/AboutTeacher.jsx`).

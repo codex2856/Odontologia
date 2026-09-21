@@ -52,6 +52,18 @@
   max-width: 26ch;
 }
 
+.site-footer__credit a {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-weight: 600;
+  color: var(--purple-300);
+  transition: color 0.3s var(--ease-editorial);
+}
+
+.site-footer__credit a:hover {
+  color: var(--white-warm);
+}
+
 .site-footer__bottom {
   padding-block: var(--space-3);
   font-size: 0.78rem;
