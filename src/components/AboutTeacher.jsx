@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Reveal from "./Reveal";
 import maglynertPortrait from "../assets/maglynert-montero.jpg";
 import maglynertSolo from "../assets/maglynert-retrato-solo.png";
@@ -72,13 +72,62 @@ const LINKS = [
 
 export default function AboutTeacher() {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [dragOffset, setDragOffset] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [step, setStep] = useState(0);
 
-  const goToPrev = () => {
-    setActiveSlide((current) => (current === 0 ? GALLERY.length - 1 : current - 1));
+  const trackRef = useRef(null);
+  const firstSlideRef = useRef(null);
+  const dragStartX = useRef(0);
+  const dragging = useRef(false);
+
+  useEffect(() => {
+    const measureStep = () => {
+      const slideEl = firstSlideRef.current;
+      const trackEl = trackRef.current;
+      if (!slideEl || !trackEl) return;
+      const slideWidth = slideEl.getBoundingClientRect().width;
+      const gap = parseFloat(getComputedStyle(trackEl).columnGap) || 0;
+      setStep(slideWidth + gap);
+    };
+
+    measureStep();
+    window.addEventListener("resize", measureStep);
+    return () => window.removeEventListener("resize", measureStep);
+  }, []);
+
+  const clampIndex = (index) => Math.min(Math.max(index, 0), GALLERY.length - 1);
+
+  const handlePointerDown = (event) => {
+    if (event.pointerType === "mouse" && event.button !== 0) return;
+    dragging.current = true;
+    dragStartX.current = event.clientX;
+    setIsDragging(true);
+    event.currentTarget.setPointerCapture(event.pointerId);
   };
 
-  const goToNext = () => {
-    setActiveSlide((current) => (current === GALLERY.length - 1 ? 0 : current + 1));
+  const handlePointerMove = (event) => {
+    if (!dragging.current) return;
+    setDragOffset(event.clientX - dragStartX.current);
+  };
+
+  const finishDrag = () => {
+    if (!dragging.current) return;
+    dragging.current = false;
+    const threshold = Math.max(40, step * 0.18);
+    if (dragOffset <= -threshold) {
+      setActiveSlide((current) => clampIndex(current + 1));
+    } else if (dragOffset >= threshold) {
+      setActiveSlide((current) => clampIndex(current - 1));
+    }
+    setDragOffset(0);
+    setIsDragging(false);
+  };
+
+  const cancelDrag = () => {
+    dragging.current = false;
+    setDragOffset(0);
+    setIsDragging(false);
   };
 
   return (
@@ -139,37 +188,37 @@ export default function AboutTeacher() {
         </p>
 
         <div className="about-teacher__carousel">
-          <button
-            type="button"
-            className="about-teacher__carousel-arrow about-teacher__carousel-arrow--prev"
-            onClick={goToPrev}
-            aria-label="Foto anterior"
-          >
-            ‹
-          </button>
-
           <div className="about-teacher__carousel-viewport">
-            {GALLERY.map((photo, index) => (
-              <figure
-                key={photo.src}
-                className={`about-teacher__carousel-slide${
-                  index === activeSlide ? " is-active" : ""
-                }`}
-                aria-hidden={index !== activeSlide}
-              >
-                <img src={photo.src} alt={photo.alt} loading={index === 0 ? undefined : "lazy"} />
-              </figure>
-            ))}
+            <div
+              ref={trackRef}
+              className={`about-teacher__carousel-track${isDragging ? " is-dragging" : ""}`}
+              style={{
+                transform: `translateX(${-activeSlide * step + dragOffset}px)`,
+              }}
+              onPointerDown={handlePointerDown}
+              onPointerMove={handlePointerMove}
+              onPointerUp={finishDrag}
+              onPointerCancel={cancelDrag}
+            >
+              {GALLERY.map((photo, index) => (
+                <figure
+                  key={photo.src}
+                  ref={index === 0 ? firstSlideRef : undefined}
+                  className={`about-teacher__carousel-slide${
+                    index === activeSlide ? " is-active" : ""
+                  }`}
+                  aria-hidden={index !== activeSlide}
+                >
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    loading={index === 0 ? undefined : "lazy"}
+                    draggable={false}
+                  />
+                </figure>
+              ))}
+            </div>
           </div>
-
-          <button
-            type="button"
-            className="about-teacher__carousel-arrow about-teacher__carousel-arrow--next"
-            onClick={goToNext}
-            aria-label="Foto siguiente"
-          >
-            ›
-          </button>
         </div>
 
         <p className="about-teacher__carousel-photo-caption">

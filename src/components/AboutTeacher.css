@@ -124,39 +124,45 @@
 
 .about-teacher__carousel {
   margin-top: 1.6rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  max-width: 760px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .about-teacher__carousel-viewport {
-  position: relative;
-  flex: 1;
-  aspect-ratio: 16 / 10;
-  border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: 0 28px 60px -32px rgba(36, 21, 49, 0.35);
-  background: var(--lavender-100);
+  padding-inline: 12%;
+}
+
+.about-teacher__carousel-track {
+  display: flex;
+  gap: 14px;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+  transition: transform 0.5s var(--ease-editorial);
+}
+
+.about-teacher__carousel-track.is-dragging {
+  transition: none;
+  cursor: grabbing;
 }
 
 .about-teacher__carousel-slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transform: scale(1.02) translateX(14px);
-  transition: opacity 0.7s var(--ease-editorial), transform 0.7s var(--ease-editorial);
-  pointer-events: none;
+  flex: 0 0 100%;
+  width: 100%;
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 20px 44px -28px rgba(36, 21, 49, 0.3);
+  opacity: 0.6;
+  transition: opacity 0.5s var(--ease-editorial), box-shadow 0.5s var(--ease-editorial);
 }
 
 .about-teacher__carousel-slide.is-active {
   opacity: 1;
-  transform: scale(1) translateX(0);
-  pointer-events: auto;
-  z-index: 1;
+  box-shadow: 0 28px 60px -32px rgba(36, 21, 49, 0.35);
 }
 
 .about-teacher__carousel-slide img {
@@ -164,30 +170,8 @@
   width: 100%;
   object-fit: cover;
   display: block;
-}
-
-.about-teacher__carousel-arrow {
-  flex: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid var(--border-hairline);
-  background: var(--white-warm);
-  color: var(--purple-700);
-  font-size: 1.4rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: border-color 0.3s var(--ease-editorial), background 0.3s var(--ease-editorial),
-    color 0.3s var(--ease-editorial);
-}
-
-.about-teacher__carousel-arrow:hover {
-  border-color: var(--purple-600);
-  background: var(--lavender-100);
-  color: var(--purple-900);
+  pointer-events: none;
+  -webkit-user-drag: none;
 }
 
 .about-teacher__carousel-photo-caption {
@@ -232,17 +216,7 @@
     max-width: 320px;
   }
 
-  .about-teacher__carousel {
-    gap: 0.6rem;
-  }
-
   .about-teacher__carousel-viewport {
-    aspect-ratio: 4 / 3.6;
-  }
-
-  .about-teacher__carousel-arrow {
-    width: 36px;
-    height: 36px;
-    font-size: 1.2rem;
+    padding-inline: 10%;
   }
 }
