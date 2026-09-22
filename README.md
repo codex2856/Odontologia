@@ -30,15 +30,9 @@ src/
 
 ## Contenido pendiente por completar
 
-- **WhatsApp**: sustituir `WHATSAPP_NUMBER` en `src/config/contact.js` por el
-  número real en formato internacional (ej. `"584121234567"`).
-- **Instagram**: sustituir `INSTAGRAM_USERNAME` en `src/config/contact.js`
-  por el usuario real (ej. `"actualizate.cariologia"`).
 - **Fotografía de la docente**: reemplazar los marcadores de posición en el
   Hero (`src/components/Hero.jsx`) y en "Sobre Maglynert"
-  (`src/components/AboutTeacher.jsx`).
-- **Currículo de la docente**: completar la sección "Sobre Maglynert" con la
-  información real (formación, trayectoria, experiencia).
+  (`src/components/AboutTeacher.jsx`) por la foto real.
 - **Cursos 02–10**: completar `description`, `objectives` y `temario` en
   `src/data/courses.js` (actualmente marcados como `TBD` / "Información
   próximamente"). El Curso 01 ya está completo como modelo de referencia.
