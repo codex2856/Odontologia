@@ -1,5 +1,17 @@
 import Reveal from "./Reveal";
+import maglynertPortrait from "../assets/maglynert-montero.jpg";
+import conferencia1 from "../assets/conferencia-1.jpg";
+import conferencia2 from "../assets/conferencia-2.jpg";
+import conferencia3 from "../assets/conferencia-3.jpg";
+import conferencia4 from "../assets/conferencia-4.jpg";
 import "./AboutTeacher.css";
+
+const GALLERY = [
+  { src: conferencia3, alt: "Ponencia en auditorio sobre etiología de la caries dental" },
+  { src: conferencia2, alt: "Conferencia en el European Dental Institute" },
+  { src: conferencia1, alt: "Clase sobre diagnóstico y evolución de caries dental" },
+  { src: conferencia4, alt: "Cierre de conferencia ante audiencia internacional" },
+];
 
 const ROLES = ["Odontólogo", "Profesor Universitario", "Profesor de Máster"];
 
@@ -29,7 +41,11 @@ export default function AboutTeacher() {
       <div className="container about-teacher__grid">
         <Reveal className="about-teacher__portrait">
           <div className="about-teacher__frame">
-            <span>Fotografía profesional</span>
+            <img
+              src={maglynertPortrait}
+              alt="Maglynert Montero Baptista"
+              className="about-teacher__photo"
+            />
           </div>
         </Reveal>
 
@@ -71,6 +87,19 @@ export default function AboutTeacher() {
           </div>
         </Reveal>
       </div>
+
+      <Reveal className="container" delay={180}>
+        <p className="about-teacher__gallery-caption">
+          Conferencista nacional e internacional
+        </p>
+        <div className="about-teacher__gallery">
+          {GALLERY.map((photo) => (
+            <figure key={photo.src} className="about-teacher__gallery-item">
+              <img src={photo.src} alt={photo.alt} loading="lazy" />
+            </figure>
+          ))}
+        </div>
+      </Reveal>
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import WhatsAppButton from "./WhatsAppButton";
 import HeroArt from "./HeroArt";
+import maglynertPortrait from "../assets/maglynert-montero.jpg";
 import "./Hero.css";
 
 export default function Hero() {
@@ -45,10 +46,11 @@ export default function Hero() {
 
         <div className="hero__portrait">
           <div className="hero__portrait-frame">
-            <div className="hero__portrait-placeholder">
-              <span>Fotografía profesional</span>
-              <span className="hero__portrait-name">Maglynert Montero Baptista</span>
-            </div>
+            <img
+              src={maglynertPortrait}
+              alt="Maglynert Montero Baptista, docente de Actualízate. Cariología"
+              className="hero__portrait-photo"
+            />
           </div>
           <div className="hero__portrait-caption">
             <span className="hero__portrait-index">Docente</span>

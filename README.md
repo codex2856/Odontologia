@@ -30,9 +30,6 @@ src/
 
 ## Contenido pendiente por completar
 
-- **Fotografía de la docente**: reemplazar los marcadores de posición en el
-  Hero (`src/components/Hero.jsx`) y en "Sobre Maglynert"
-  (`src/components/AboutTeacher.jsx`) por la foto real.
 - **Cursos 02–10**: completar `description`, `objectives` y `temario` en
   `src/data/courses.js` (actualmente marcados como `TBD` / "Información
   próximamente"). El Curso 01 ya está completo como modelo de referencia.
