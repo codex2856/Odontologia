@@ -32,6 +32,11 @@ export default function Footer() {
 
       <div className="container site-footer__bottom">
         <p>© {new Date().getFullYear()} Actualízate. Cariología. Todos los derechos reservados.</p>
+        <nav className="site-footer__legal" aria-label="Enlaces legales">
+          <Link to="/aviso-legal">Aviso legal</Link>
+          <Link to="/privacidad">Política de privacidad</Link>
+          <Link to="/cookies">Política de cookies</Link>
+        </nav>
       </div>
     </footer>
   );

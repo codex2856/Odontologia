@@ -4,6 +4,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import CourseDetail from "./pages/CourseDetail";
+import AvisoLegal from "./pages/AvisoLegal";
+import Privacidad from "./pages/Privacidad";
+import Cookies from "./pages/Cookies";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -29,6 +32,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cursos/:slug" element={<CourseDetail />} />
+          <Route path="/aviso-legal" element={<AvisoLegal />} />
+          <Route path="/privacidad" element={<Privacidad />} />
+          <Route path="/cookies" element={<Cookies />} />
         </Routes>
       </main>
       <Footer />

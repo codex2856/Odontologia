@@ -66,8 +66,28 @@
 
 .site-footer__bottom {
   padding-block: var(--space-3);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
   font-size: 0.78rem;
   color: var(--graphite-300);
+}
+
+.site-footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.site-footer__legal a {
+  color: var(--graphite-300);
+  transition: color 0.3s var(--ease-editorial);
+}
+
+.site-footer__legal a:hover {
+  color: var(--white-warm);
 }
 
 @media (max-width: 720px) {
@@ -86,5 +106,10 @@
   .site-footer__credit {
     justify-self: start;
     text-align: left;
+  }
+
+  .site-footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
