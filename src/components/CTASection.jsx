@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Reveal from "./Reveal";
 import WhatsAppButton from "./WhatsAppButton";
 import "./CTASection.css";
@@ -21,6 +22,10 @@ export default function CTASection() {
               Ver programa académico
             </a>
           </div>
+          <p className="cta__privacy-note">
+            Al escribirnos por WhatsApp, aceptas nuestra{" "}
+            <Link to="/privacidad">política de privacidad</Link>.
+          </p>
         </Reveal>
       </div>
     </section>

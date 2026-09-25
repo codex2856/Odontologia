@@ -36,3 +36,15 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.cta__privacy-note {
+  margin-top: 1.4rem;
+  font-size: 0.82rem;
+  color: var(--text-on-ink-muted);
+}
+
+.cta__privacy-note a {
+  color: var(--purple-800);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

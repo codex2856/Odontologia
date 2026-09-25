@@ -102,6 +102,10 @@ export default function CourseDetail() {
             >
               Consultar por WhatsApp
             </WhatsAppButton>
+            <p className="course-detail__privacy-note">
+              Al escribirnos, aceptas nuestra{" "}
+              <Link to="/privacidad">política de privacidad</Link>.
+            </p>
           </Reveal>
         </div>
 
