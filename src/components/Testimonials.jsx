@@ -66,11 +66,8 @@ export default function Testimonials() {
               </span>
               <blockquote>{t.quote}</blockquote>
               <figcaption>
-                <span className="testimonial-card__avatar" aria-hidden="true" />
-                <span>
-                  <strong>{t.name}</strong>
-                  {t.role && <em>{t.role}</em>}
-                </span>
+                <strong>{t.name}</strong>
+                {t.role && <em>{t.role}</em>}
               </figcaption>
             </Reveal>
           ))}
