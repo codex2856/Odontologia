@@ -40,8 +40,10 @@ src/
 - **Cursos 02–10**: completar `description`, `objectives` y `temario` en
   `src/data/courses.js` (actualmente marcados como `TBD` / "Información
   próximamente"). El Curso 01 ya está completo como modelo de referencia.
-- **Testimonios**: sustituir el contenido de demostración en
-  `src/components/Testimonials.jsx` por testimonios reales.
+- **Testimonios**: ya se incorporaron 7 testimonios reales en
+  `src/components/Testimonials.jsx`. Uno de ellos todavía no tiene nombre
+  del autor (se muestra como "Nombre pendiente") a la espera de que se
+  confirme.
 - **Fechas, precios y horas académicas**: no se han incluido intencionalmente
   y deben añadirse cuando estén disponibles (en `courses.js` y donde
   corresponda).
