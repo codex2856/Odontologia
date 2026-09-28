@@ -1,6 +1,15 @@
 import { getInstagramLink } from "../config/contact";
 import Reveal from "./Reveal";
+import video1 from "../assets/videos/divulgacion-1.mp4";
+import video2 from "../assets/videos/divulgacion-2.mp4";
+import video3 from "../assets/videos/divulgacion-3.mp4";
 import "./EducationalContent.css";
+
+const VIDEOS = [
+  { src: video1, caption: "Descripción pendiente" },
+  { src: video2, caption: "Descripción pendiente" },
+  { src: video3, caption: "Descripción pendiente" },
+];
 
 const ICONS = {
   saliva: (
@@ -96,6 +105,30 @@ export default function EducationalContent() {
               <span className="educational-content__icon">{ICONS[topic.icon]}</span>
               <h3>{topic.title}</h3>
               <p>{topic.desc}</p>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal className="educational-content__videos-top" delay={200}>
+          <p className="educational-content__videos-eyebrow">Ejemplos de contenido</p>
+        </Reveal>
+
+        <div className="educational-content__videos">
+          {VIDEOS.map((video, index) => (
+            <Reveal
+              as="figure"
+              className="educational-content__video-card"
+              key={video.src}
+              delay={220 + index * 70}
+            >
+              <video
+                src={video.src}
+                controls
+                playsInline
+                preload="metadata"
+                className="educational-content__video"
+              />
+              <figcaption>{video.caption}</figcaption>
             </Reveal>
           ))}
         </div>
