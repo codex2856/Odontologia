@@ -47,8 +47,11 @@ export default function Header() {
           className="site-header__logo"
           onClick={(e) => handleNavClick(e, "#inicio")}
         >
-          Actualízate<span className="site-header__logo-dot">.</span>
-          <em className="site-header__logo-tagline"> Cariología… y algo más</em>
+          <span className="site-header__logo-line">
+            Actualízate<span className="site-header__logo-dot">.</span>
+            <em className="site-header__logo-cariologia"> Cariología…</em>
+          </span>
+          <em className="site-header__logo-subtitle">y algo más</em>
         </Link>
 
         <nav className="site-header__nav" aria-label="Navegación principal">
