@@ -68,8 +68,14 @@ export const courses = [
     title: "Detección y clasificación de las lesiones de caries",
     shortDescription:
       "Criterios actuales para reconocer y clasificar lesiones de caries de forma sistemática.",
-    description: TBD,
-    objectives: [TBD],
+    description:
+      "Un curso centrado en cómo detectar y clasificar las lesiones de caries de forma sistemática, integrando los criterios clínicos vigentes. Se revisan los sistemas de clasificación actuales, como ICDAS, y su aplicación junto con la evaluación visual, táctil y radiográfica para reconocer con precisión cada etapa de la lesión.",
+    objectives: [
+      "Reconocer clínicamente las lesiones de caries en sus distintas etapas.",
+      "Clasificar las lesiones según su severidad, progresión y actividad.",
+      "Aplicar el sistema ICDAS y otros sistemas de clasificación en la práctica diaria.",
+      "Integrar la evaluación visual, táctil y radiográfica en el proceso diagnóstico.",
+    ],
     temario: [
       "Detección clínica de las lesiones de caries.",
       "Clasificación según severidad y progresión.",
@@ -79,7 +85,7 @@ export const courses = [
       "Evaluación visual, táctil y radiográfica.",
       "Interpretación clínica de las diferentes etapas de la lesión.",
     ],
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
     id: 3,
@@ -90,8 +96,14 @@ export const courses = [
       "Diagnóstico diferencial de las lesiones de caries y defectos del esmalte",
     shortDescription:
       "Herramientas para distinguir lesiones cariosas de otros defectos del esmalte dental.",
-    description: TBD,
-    objectives: [TBD],
+    description:
+      "Un curso enfocado en distinguir las lesiones de caries de otros defectos del esmalte dental, como la hipoplasia, la hipomineralización y la fluorosis. Se abordan los criterios clínicos para diferenciar estas condiciones —incluso cuando coexisten en un mismo diente— y cómo integrar los hallazgos en un diagnóstico certero.",
+    objectives: [
+      "Diferenciar las lesiones de caries de los defectos del desarrollo del esmalte.",
+      "Reconocer clínicamente la hipoplasia, la hipomineralización y la fluorosis.",
+      "Identificar los casos en que caries y defectos del esmalte coexisten en un mismo diente.",
+      "Integrar los hallazgos clínicos para establecer un diagnóstico diferencial preciso.",
+    ],
     temario: [
       "Diagnóstico diferencial.",
       "Defectos del desarrollo del esmalte.",
@@ -100,7 +112,7 @@ export const courses = [
       "Coexistencia de lesiones de caries y defectos del esmalte.",
       "Integración de los hallazgos clínicos para establecer un diagnóstico.",
     ],
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
     id: 4,
@@ -110,8 +122,14 @@ export const courses = [
     title: "Evaluación individual del riesgo de caries",
     shortDescription:
       "Metodología para valorar el riesgo de caries de cada paciente de forma individualizada.",
-    description: TBD,
-    objectives: [TBD],
+    description:
+      "Una guía práctica para evaluar el riesgo de caries de cada paciente de forma individualizada, considerando la dieta, el biofilm, la saliva, los fluoruros y los factores propios del huésped y su comportamiento. El curso revisa cómo adaptar esta evaluación según la etapa de vida del paciente, desde la primera infancia hasta la adultez mayor.",
+    objectives: [
+      "Comprender los factores de riesgo, protectores e indicadores de enfermedad en Cariología.",
+      "Evaluar el riesgo de caries de forma individualizada en distintas etapas de vida.",
+      "Considerar el papel de la dieta, el biofilm, la saliva y los fluoruros en el riesgo de caries.",
+      "Personalizar las estrategias preventivas y terapéuticas según el perfil de riesgo del paciente.",
+    ],
     temario: [
       "Concepto actual de riesgo de caries.",
       "Factores de riesgo, protectores e indicadores de enfermedad.",
@@ -121,7 +139,7 @@ export const courses = [
       "Evaluación del riesgo en lactantes, niños y adolescentes, adultos y adultos mayores.",
       "Personalización de las estrategias preventivas y terapéuticas.",
     ],
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
     id: 5,
@@ -132,8 +150,14 @@ export const courses = [
       "Manejo mínimamente invasivo de las lesiones de caries no cavitadas",
     shortDescription:
       "Estrategias conservadoras para el abordaje de lesiones en etapas tempranas.",
-    description: TBD,
-    objectives: [TBD],
+    description:
+      "Un curso centrado en el manejo conservador de las lesiones de caries no cavitadas, bajo los principios de la odontología mínimamente invasiva. Se revisan el control de los factores etiológicos, el manejo no operatorio y opciones terapéuticas como fluoruros, agentes remineralizantes, sellado e infiltración.",
+    objectives: [
+      "Aplicar los principios de la odontología mínimamente invasiva en el manejo de lesiones no cavitadas.",
+      "Controlar los factores etiológicos y monitorizar la actividad de las lesiones.",
+      "Seleccionar entre fluoruros, agentes remineralizantes, sellado e infiltración según cada caso.",
+      "Reconocer las indicaciones, contraindicaciones y el seguimiento adecuado de cada tratamiento.",
+    ],
     temario: [
       "Principios de la odontología mínimamente invasiva.",
       "Control de los factores etiológicos.",
@@ -144,7 +168,7 @@ export const courses = [
       "Infiltración.",
       "Indicaciones, contraindicaciones y seguimiento.",
     ],
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
     id: 6,
@@ -154,8 +178,14 @@ export const courses = [
     title: "Manejo mínimamente invasivo de las lesiones de caries cavitadas",
     shortDescription:
       "Criterios y técnicas conservadoras para el tratamiento de lesiones cavitadas.",
-    description: TBD,
-    objectives: [TBD],
+    description:
+      "Un curso sobre el manejo conservador de las lesiones de caries cavitadas, con énfasis en la preservación del tejido dental sano. Se abordan la remoción selectiva del tejido cariado, el manejo de lesiones profundas, la selección de materiales restauradores y el seguimiento del paciente para controlar la enfermedad a largo plazo.",
+    objectives: [
+      "Determinar cuándo y cómo restaurar una lesión de caries cavitada.",
+      "Aplicar los principios de preservación de tejido dental y remoción selectiva.",
+      "Manejar lesiones profundas con criterios mínimamente invasivos.",
+      "Seleccionar materiales restauradores adecuados y dar seguimiento al paciente.",
+    ],
     temario: [
       "¿Cuándo restaurar una lesión de caries?",
       "Principios de preservación de tejido dental.",
@@ -166,7 +196,7 @@ export const courses = [
       "Reparación y mantenimiento de restauraciones.",
       "Seguimiento del paciente y control de la enfermedad.",
     ],
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
     id: 7,
@@ -176,8 +206,14 @@ export const courses = [
     title: "Tratamientos remineralizantes: cuándo, cómo y por qué utilizarlos",
     shortDescription:
       "Criterios clínicos para incorporar la remineralización en el plan de tratamiento.",
-    description: TBD,
-    objectives: [TBD],
+    description:
+      "Un curso que profundiza en los tratamientos remineralizantes: qué son, cómo actúan y cuándo están indicados. Se revisan los fluoruros y otros agentes remineralizantes disponibles, junto con la evidencia científica que respalda su uso y sus límites terapéuticos reales.",
+    objectives: [
+      "Comprender los mecanismos de desmineralización y remineralización del esmalte.",
+      "Conocer los fluoruros y demás agentes remineralizantes disponibles.",
+      "Identificar cuándo está indicado un tratamiento remineralizante.",
+      "Valorar la evidencia científica y las limitaciones de estos tratamientos.",
+    ],
     temario: [
       "Concepto de remineralización.",
       "Mecanismos de desmineralización y remineralización.",
@@ -188,7 +224,7 @@ export const courses = [
       "Evidencia científica disponible.",
       "Limitaciones y expectativas terapéuticas.",
     ],
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
     id: 8,
@@ -198,8 +234,14 @@ export const courses = [
     title: "Péptidos autoensamblables en Cariología",
     shortDescription:
       "Una mirada a esta tecnología emergente y su papel en el manejo de la caries.",
-    description: TBD,
-    objectives: [TBD],
+    description:
+      "Una mirada a los péptidos autoensamblables, una tecnología emergente en Cariología. El curso explica sus fundamentos biológicos y fisicoquímicos, su mecanismo de acción —incluida la nucleación y formación de hidroxiapatita— y su integración con los tratamientos mínimamente invasivos.",
+    objectives: [
+      "Comprender qué son los péptidos autoensamblables y sus fundamentos biológicos.",
+      "Explicar el mecanismo de autoensamblaje y su papel en la formación de hidroxiapatita.",
+      "Conocer el péptido P11-4 y otras aplicaciones clínicas disponibles.",
+      "Integrar esta tecnología con los tratamientos mínimamente invasivos, según la evidencia actual.",
+    ],
     temario: [
       "¿Qué son los péptidos autoensamblables?",
       "Fundamentos biológicos y fisicoquímicos.",
@@ -210,7 +252,7 @@ export const courses = [
       "Integración con tratamientos mínimamente invasivos.",
       "Evidencia científica y limitaciones actuales.",
     ],
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
     id: 9,
@@ -220,8 +262,14 @@ export const courses = [
     title: "Cómo buscar y evaluar evidencia científica en Cariología",
     shortDescription:
       "Herramientas prácticas para localizar y valorar la literatura científica disponible.",
-    description: TBD,
-    objectives: [TBD],
+    description:
+      "Un curso práctico para aprender a buscar y evaluar evidencia científica en Cariología. Se enseña a transformar una pregunta clínica en una pregunta de investigación, construir estrategias de búsqueda efectivas en bases de datos científicas y hacer una lectura crítica de la literatura para aplicarla en la práctica diaria.",
+    objectives: [
+      "Transformar una pregunta clínica en una pregunta de investigación buscable.",
+      "Diseñar estrategias de búsqueda bibliográfica usando tesauros y operadores booleanos.",
+      "Identificar revistas y fuentes científicas confiables.",
+      "Hacer una lectura crítica de la literatura según el tipo de estudio y nivel de evidencia.",
+    ],
     temario: [
       "De la pregunta clínica a la pregunta de investigación.",
       "Estrategias de búsqueda bibliográfica.",
@@ -234,7 +282,7 @@ export const courses = [
       "Tipos de estudios y niveles de evidencia.",
       "Interpretación de resultados y relevancia clínica.",
     ],
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
     id: 10,
@@ -244,8 +292,14 @@ export const courses = [
     title: "Cariología basada en la evidencia científica",
     shortDescription:
       "Integrar la evidencia disponible en la toma de decisiones clínicas diarias.",
-    description: TBD,
-    objectives: [TBD],
+    description:
+      "Un curso de cierre que integra la evidencia científica en la toma de decisiones clínicas diarias en Cariología. A través de casos clínicos integradores, se revisan los principios de la práctica basada en evidencia y cómo combinarla con la experiencia clínica y las necesidades particulares de cada paciente.",
+    objectives: [
+      "Aplicar los principios de la práctica clínica basada en evidencia en Cariología.",
+      "Integrar evidencia científica, experiencia clínica y necesidades del paciente en la toma de decisiones.",
+      "Evaluar críticamente las alternativas terapéuticas disponibles.",
+      "Llevar la evidencia científica a la práctica clínica diaria a través de casos integradores.",
+    ],
     temario: [
       "Principios de la práctica clínica basada en evidencia.",
       "Integración de evidencia científica, experiencia clínica y necesidades del paciente.",
@@ -255,7 +309,7 @@ export const courses = [
       "De la evidencia a la práctica clínica.",
       "Casos clínicos integradores.",
     ],
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
 ];
 

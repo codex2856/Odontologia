@@ -31,9 +31,6 @@ src/
 
 ## Contenido pendiente por completar
 
-- **Cursos 02–10**: completar `description`, `objectives` y `temario` en
-  `src/data/courses.js` (actualmente marcados como `TBD` / "Información
-  próximamente"). El Curso 01 ya está completo como modelo de referencia.
-- **Fechas, precios y horas académicas**: no se han incluido intencionalmente
-  y deben añadirse cuando estén disponibles (en `courses.js` y donde
-  corresponda).
+- **Fechas, precios y horas crédito académicas**: no se han incluido
+  intencionalmente y deben añadirse cuando estén disponibles (en
+  `courses.js` y donde corresponda).
