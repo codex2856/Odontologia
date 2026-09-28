@@ -29,7 +29,7 @@
 }
 
 .site-footer__tagline {
-  margin-top: 0.4rem;
+  margin-top: 0;
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.2rem;
