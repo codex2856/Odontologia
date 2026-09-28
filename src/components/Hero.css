@@ -47,8 +47,8 @@
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
-  gap: clamp(2.5rem, 5vw, 5rem);
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
   align-items: center;
 }
 
@@ -119,12 +119,11 @@
 
 .hero__portrait {
   position: relative;
-  justify-self: center;
 }
 
 .hero__portrait-frame {
   position: relative;
-  width: min(320px, 70vw);
+  width: 100%;
   aspect-ratio: 4 / 5;
   border: 1px solid rgba(69, 42, 92, 0.3);
   border-radius: var(--radius-md);
@@ -217,8 +216,11 @@
   }
 
   .hero__portrait {
-    justify-self: start;
     margin-top: 1.5rem;
+  }
+
+  .hero__portrait-frame {
+    max-width: 320px;
   }
 
   .hero-art {
@@ -230,10 +232,6 @@
 @media (max-width: 560px) {
   .hero {
     padding-top: 7.5rem;
-  }
-
-  .hero__portrait-frame {
-    width: 100%;
   }
 
   .hero__title {
