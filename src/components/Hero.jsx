@@ -14,11 +14,9 @@ export default function Hero() {
           <p className="eyebrow eyebrow--on-ink">Formación continua en Cariología</p>
 
           <h1 className="hero__title">
-            Actualízate.
+            Actualízate. <em>Cariología…</em>
             <br />
-            <em>
-              Cariología… <span className="hero__title-accent">y algo más.</span>
-            </em>
+            <span className="hero__title-tagline">y algo más.</span>
           </h1>
 
           <p className="hero__subtitle">
