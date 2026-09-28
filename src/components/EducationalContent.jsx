@@ -109,10 +109,6 @@ export default function EducationalContent() {
           ))}
         </div>
 
-        <Reveal className="educational-content__videos-top" delay={200}>
-          <p className="educational-content__videos-eyebrow">Ejemplos de contenido</p>
-        </Reveal>
-
         <div className="educational-content__videos">
           {VIDEOS.map((video, index) => (
             <Reveal

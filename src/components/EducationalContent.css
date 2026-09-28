@@ -47,20 +47,8 @@
   color: var(--text-muted);
 }
 
-.educational-content__videos-top {
-  margin-top: 3.4rem;
-}
-
-.educational-content__videos-eyebrow {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--graphite-500);
-  text-align: center;
-}
-
 .educational-content__videos {
-  margin-top: 1.4rem;
+  margin-top: 3.4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.3rem;
