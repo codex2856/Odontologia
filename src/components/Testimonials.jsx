@@ -1,8 +1,6 @@
 import Reveal from "./Reveal";
 import "./Testimonials.css";
 
-const PENDING_NAME = "Nombre pendiente";
-
 const TESTIMONIALS = [
   {
     name: "Nayela Bermudez",
@@ -36,7 +34,7 @@ const TESTIMONIALS = [
       "Muchísimas gracias, Prof. Maglynert. Sus cursos han sido excelentes en contenido y metodología. La posibilidad de repasar las clases, contar con material de apoyo y tener un chat para resolver dudas demuestra su enorme compromiso. Esa disponibilidad tan cercana no tiene precio. ¡Un fuerte abrazo!",
   },
   {
-    name: PENDING_NAME,
+    name: "María Cristina Aguilera",
     quote:
       "La experiencia me pareció muy buena, la interacción en vivo y directo con la profesora permite sentirse cercano y en confianza a la hora de preguntar o aclarar dudas. El hecho de que haya material de apoyo que sustente lo visto en clase permite profundizar y digerir con calma el contenido. Felicitaciones por la iniciativa y mucho éxito.",
   },
@@ -70,9 +68,7 @@ export default function Testimonials() {
               <figcaption>
                 <span className="testimonial-card__avatar" aria-hidden="true" />
                 <span>
-                  <strong className={t.name === PENDING_NAME ? "is-pending" : ""}>
-                    {t.name}
-                  </strong>
+                  <strong>{t.name}</strong>
                   {t.role && <em>{t.role}</em>}
                 </span>
               </figcaption>
