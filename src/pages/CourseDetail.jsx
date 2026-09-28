@@ -23,6 +23,7 @@ export default function CourseDetail() {
 
   const currentIndex = courses.findIndex((c) => c.slug === slug);
   const next = courses[(currentIndex + 1) % courses.length];
+  const prev = courses[(currentIndex - 1 + courses.length) % courses.length];
 
   return (
     <article className="course-detail">
@@ -116,15 +117,33 @@ export default function CourseDetail() {
           </Reveal>
         </div>
 
-        <nav className="course-detail__next" aria-label="Siguiente curso">
-          <Link to={`/cursos/${next.slug}`} className="course-detail__next-link">
-            <span className="course-detail__next-text">
+        <nav className="course-detail__pagination" aria-label="Navegación entre cursos">
+          <Link
+            to={`/cursos/${prev.slug}`}
+            className="course-detail__nav-link course-detail__nav-link--prev"
+          >
+            <span className="course-detail__nav-arrow" aria-hidden="true">
+              ←
+            </span>
+            <span className="course-detail__nav-text">
+              <span>Curso anterior</span>
+              <strong>
+                Curso {prev.number} — {prev.title}
+              </strong>
+            </span>
+          </Link>
+
+          <Link
+            to={`/cursos/${next.slug}`}
+            className="course-detail__nav-link course-detail__nav-link--next"
+          >
+            <span className="course-detail__nav-text">
               <span>Siguiente curso</span>
               <strong>
                 Curso {next.number} — {next.title}
               </strong>
             </span>
-            <span className="course-detail__next-arrow" aria-hidden="true">
+            <span className="course-detail__nav-arrow" aria-hidden="true">
               →
             </span>
           </Link>
