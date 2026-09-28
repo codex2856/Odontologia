@@ -198,13 +198,20 @@
   border-top: 1px solid var(--border-hairline);
 }
 
-.course-detail__next a {
+.course-detail__next-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.course-detail__next-text {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
 }
 
-.course-detail__next span {
+.course-detail__next-text > span {
   font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -219,8 +226,21 @@
   transition: color 0.3s var(--ease-editorial);
 }
 
-.course-detail__next a:hover strong {
+.course-detail__next-link:hover strong {
   color: var(--purple-600);
+}
+
+.course-detail__next-arrow {
+  flex: none;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--purple-600);
+  line-height: 1;
+  transition: transform 0.3s var(--ease-editorial);
+}
+
+.course-detail__next-link:hover .course-detail__next-arrow {
+  transform: translateX(6px);
 }
 
 @media (max-width: 900px) {

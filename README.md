@@ -31,12 +31,6 @@ src/
 
 ## Contenido pendiente por completar
 
-- **Páginas legales** (`/aviso-legal`, `/privacidad`, `/cookies`): el texto
-  legal ya está redactado y publicado, pero los datos identificativos
-  (nombre/razón social, NIF, domicilio, email de contacto y, opcionalmente,
-  nº de colegiada) están marcados como "Pendiente de confirmar" en
-  `src/config/legal.js`. Hay que sustituirlos por los datos reales antes de
-  que el aviso legal sea válido conforme a la LSSI-CE.
 - **Cursos 02–10**: completar `description`, `objectives` y `temario` en
   `src/data/courses.js` (actualmente marcados como `TBD` / "Información
   próximamente"). El Curso 01 ya está completo como modelo de referencia.

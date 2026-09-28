@@ -116,11 +116,16 @@ export default function CourseDetail() {
         </div>
 
         <nav className="course-detail__next" aria-label="Siguiente curso">
-          <Link to={`/cursos/${next.slug}`}>
-            <span>Siguiente curso</span>
-            <strong>
-              Curso {next.number} — {next.title}
-            </strong>
+          <Link to={`/cursos/${next.slug}`} className="course-detail__next-link">
+            <span className="course-detail__next-text">
+              <span>Siguiente curso</span>
+              <strong>
+                Curso {next.number} — {next.title}
+              </strong>
+            </span>
+            <span className="course-detail__next-arrow" aria-hidden="true">
+              →
+            </span>
           </Link>
         </nav>
       </div>
