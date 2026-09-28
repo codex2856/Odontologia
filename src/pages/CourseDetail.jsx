@@ -128,12 +128,7 @@ export default function CourseDetail() {
               <span className="course-detail__nav-arrow" aria-hidden="true">
                 ←
               </span>
-              <span className="course-detail__nav-text">
-                <span>Curso anterior</span>
-                <strong>
-                  Curso {prev.number} — {prev.title}
-                </strong>
-              </span>
+              <span className="course-detail__nav-text">Curso anterior</span>
             </Link>
           )}
 
@@ -142,12 +137,7 @@ export default function CourseDetail() {
               to={`/cursos/${next.slug}`}
               className="course-detail__nav-link course-detail__nav-link--next"
             >
-              <span className="course-detail__nav-text">
-                <span>Siguiente curso</span>
-                <strong>
-                  Curso {next.number} — {next.title}
-                </strong>
-              </span>
+              <span className="course-detail__nav-text">Siguiente curso</span>
               <span className="course-detail__nav-arrow" aria-hidden="true">
                 →
               </span>
@@ -157,10 +147,7 @@ export default function CourseDetail() {
               to="/#cursos"
               className="course-detail__nav-link course-detail__nav-link--next course-detail__nav-link--finish"
             >
-              <span className="course-detail__nav-text">
-                <span>Fin del programa</span>
-                <strong>Terminar y volver al programa académico</strong>
-              </span>
+              <span className="course-detail__nav-text">Terminar</span>
               <span className="course-detail__nav-arrow" aria-hidden="true">
                 ✓
               </span>
