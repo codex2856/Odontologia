@@ -6,6 +6,7 @@ import "./CourseDetail.css";
 
 const INFO_ROWS = [
   { label: "Modalidad", key: "modalidad" },
+  { label: "Horas crédito", key: "horasCredito" },
   { label: "Material de apoyo", key: "materialApoyo" },
   { label: "Grabaciones", key: "grabaciones" },
   { label: "Certificado", key: "certificado" },

@@ -23,6 +23,7 @@ export const TBD = "Información próximamente";
 
 export const COMMON_PROGRAM_INFO = {
   modalidad: "Clases en vivo por Zoom",
+  horasCredito: TBD,
   materialApoyo: "Material de apoyo incluido",
   grabaciones:
     "Grabaciones alojadas en YouTube como videos privados, exclusivos para los alumnos del curso",
