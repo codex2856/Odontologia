@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import Reveal from "./Reveal";
-import maglynertPortrait from "../assets/maglynert-montero.jpg";
 import maglynertSolo from "../assets/maglynert-retrato-solo.png";
 import conferencia1 from "../assets/conferencia-1.jpg";
 import conferencia2 from "../assets/conferencia-2.jpg";
@@ -35,11 +34,6 @@ const GALLERY = [
     src: conferencia6,
     alt: "Ponencia internacional ante audiencia especializada",
     caption: "Ponencia internacional ante audiencia especializada",
-  },
-  {
-    src: maglynertPortrait,
-    alt: "Maglynert Montero Baptista",
-    caption: "Maglynert Montero Baptista",
   },
   {
     src: conferencia5,
