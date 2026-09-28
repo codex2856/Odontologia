@@ -49,9 +49,9 @@ export default function Header() {
         >
           <span className="site-header__logo-line">
             Actualízate<span className="site-header__logo-dot">.</span>
-            <em className="site-header__logo-cariologia"> Cariología…</em>
+            <em className="site-header__logo-cariologia"> Cariología</em>
           </span>
-          <em className="site-header__logo-subtitle">y algo más</em>
+          <em className="site-header__logo-subtitle">…y algo más</em>
         </Link>
 
         <nav className="site-header__nav" aria-label="Navegación principal">

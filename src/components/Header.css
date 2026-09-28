@@ -54,9 +54,8 @@
 
 .site-header__logo-cariologia {
   font-style: italic;
-  font-weight: 500;
-  font-size: 0.62em;
-  color: var(--purple-600);
+  font-weight: 400;
+  color: var(--purple-900);
   white-space: nowrap;
   display: none;
 }
@@ -64,8 +63,8 @@
 .site-header__logo-subtitle {
   font-style: italic;
   font-weight: 400;
-  font-size: 0.4em;
-  color: var(--purple-700);
+  font-size: 0.58em;
+  color: var(--purple-600);
   white-space: nowrap;
   margin-top: 0.15em;
   display: none;
