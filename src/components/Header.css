@@ -27,17 +27,34 @@
   gap: var(--space-3);
 }
 
+.site-header__inner.container {
+  max-width: 1400px;
+}
+
 .site-header__logo {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
   font-family: var(--font-display);
-  font-size: 2.6rem;
-  font-style: italic;
+  font-size: 2.2rem;
+  font-style: normal;
   font-weight: 500;
   color: var(--purple-900);
   letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .site-header__logo-dot {
   color: var(--purple-300);
+}
+
+.site-header__logo-tagline {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.42em;
+  color: var(--purple-600);
+  white-space: nowrap;
+  display: none;
 }
 
 .site-header__nav {
@@ -46,7 +63,7 @@
 
 .site-header__nav ul {
   display: flex;
-  gap: 1.7rem;
+  gap: 1.4rem;
 }
 
 .site-header__nav a {
@@ -144,5 +161,11 @@
 
   .site-header__mobile {
     display: none;
+  }
+}
+
+@media (min-width: 1240px) {
+  .site-header__logo-tagline {
+    display: inline;
   }
 }

@@ -30,7 +30,6 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  filter: grayscale(12%) saturate(0.9);
   transition: transform 0.7s var(--ease-editorial);
 }
 
@@ -43,9 +42,8 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px),
-    linear-gradient(150deg, rgba(36, 21, 49, 0.78) 0%, rgba(91, 56, 120, 0.55) 55%, rgba(91, 56, 120, 0.22) 100%);
-  background-size: 14px 14px, auto;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+  background-size: 14px 14px;
 }
 
 .course-card__media::after {
@@ -68,12 +66,17 @@
 .course-card__number {
   position: absolute;
   z-index: 2;
-  right: 1.3rem;
-  bottom: 0.6rem;
+  right: 0.9rem;
+  bottom: 0.9rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(36, 21, 49, 0.72);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 4.2rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.15rem;
+  color: var(--white-warm);
   line-height: 1;
 }
 
