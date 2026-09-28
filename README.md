@@ -3,6 +3,8 @@
 Landing page de formación continua en Cariología, dirigida por Maglynert
 Montero Baptista. Construida con React + Vite.
 
+**Sitio en producción:** https://actualizatecariologia.com
+
 ## Desarrollo
 
 ```bash
