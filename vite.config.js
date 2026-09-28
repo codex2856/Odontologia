@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Odontologia/',
+  base: '/',
   plugins: [react()],
 })
