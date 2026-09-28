@@ -6,9 +6,9 @@ import video3 from "../assets/videos/divulgacion-3.mp4";
 import "./EducationalContent.css";
 
 const VIDEOS = [
-  { src: video1, caption: "Descripción pendiente" },
-  { src: video2, caption: "Descripción pendiente" },
-  { src: video3, caption: "Descripción pendiente" },
+  { src: video2, caption: "Manchas blancas en brackets" },
+  { src: video3, caption: "Remineralización" },
+  { src: video1, caption: "Lesión de caries" },
 ];
 
 const ICONS = {

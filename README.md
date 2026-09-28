@@ -43,7 +43,3 @@ src/
 - **Fechas, precios y horas académicas**: no se han incluido intencionalmente
   y deben añadirse cuando estén disponibles (en `courses.js` y donde
   corresponda).
-- **Descripción de los videos de Divulgación**: se incorporaron 3 videos
-  reales en `src/components/EducationalContent.jsx`, pero su leyenda
-  aparece como "Descripción pendiente" — falta que se indique de qué
-  trata cada uno.
