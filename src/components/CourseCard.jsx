@@ -9,7 +9,6 @@ export default function CourseCard({ course, delayMs = 0 }) {
         {course.image && (
           <img src={course.image} alt="" className="course-card__image" loading="lazy" />
         )}
-        <span className="course-card__number">{course.number}</span>
       </Link>
 
       <div className="course-card__body">

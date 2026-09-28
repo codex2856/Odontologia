@@ -19,7 +19,6 @@ const TESTIMONIALS = [
   },
   {
     name: "María Elena Terán Moreno",
-    role: "Odontóloga",
     quote:
       "Hola, Dra. Magly. Realmente el conocimiento transmitido por usted fue para mí como abrir una ventana y mirar un abanico de información que no conocía. Muchísimas gracias, Dios la bendiga.",
   },
