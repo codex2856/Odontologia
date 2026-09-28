@@ -31,6 +31,6 @@ src/
 
 ## Contenido pendiente por completar
 
-- **Fechas, precios y horas crédito académicas**: no se han incluido
-  intencionalmente y deben añadirse cuando estén disponibles (en
-  `courses.js` y donde corresponda).
+- **Fechas y precios**: no se han incluido intencionalmente y deben
+  añadirse cuando estén disponibles (en `courses.js` y donde
+  corresponda).
