@@ -29,8 +29,8 @@ src/
   hooks/        useScrollReveal, useScrollHeader
 ```
 
-## Contenido pendiente por completar
+## Decisiones de contenido
 
-- **Fechas y precios**: no se han incluido intencionalmente y deben
-  añadirse cuando estén disponibles (en `courses.js` y donde
-  corresponda).
+- **Fechas y precios**: por decisión de la titular, no se muestran en
+  la página. Esa información se gestiona directamente por WhatsApp al
+  consultar por un curso.
