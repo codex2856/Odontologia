@@ -123,10 +123,51 @@
 }
 
 .about-teacher__carousel {
+  position: relative;
   margin-top: 1.6rem;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about-teacher__carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border-hairline);
+  background: var(--white-warm);
+  color: var(--purple-700);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 0.3s var(--ease-editorial), background 0.3s var(--ease-editorial),
+    color 0.3s var(--ease-editorial), opacity 0.3s var(--ease-editorial);
+}
+
+.about-teacher__carousel-arrow:hover:not(:disabled) {
+  border-color: var(--purple-600);
+  background: var(--lavender-100);
+  color: var(--purple-900);
+}
+
+.about-teacher__carousel-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.about-teacher__carousel-arrow--prev {
+  left: 0.4rem;
+}
+
+.about-teacher__carousel-arrow--next {
+  right: 0.4rem;
 }
 
 .about-teacher__carousel-viewport {
@@ -218,5 +259,19 @@
 
   .about-teacher__carousel-viewport {
     padding-inline: 10%;
+  }
+
+  .about-teacher__carousel-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 1.1rem;
+  }
+
+  .about-teacher__carousel-arrow--prev {
+    left: 0.15rem;
+  }
+
+  .about-teacher__carousel-arrow--next {
+    right: 0.15rem;
   }
 }

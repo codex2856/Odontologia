@@ -37,7 +37,7 @@ const GALLERY = [
     caption: "Ponencia internacional ante audiencia especializada",
   },
   {
-    src: maglynertSolo,
+    src: maglynertPortrait,
     alt: "Maglynert Montero Baptista",
     caption: "Maglynert Montero Baptista",
   },
@@ -130,13 +130,16 @@ export default function AboutTeacher() {
     setIsDragging(false);
   };
 
+  const goToPrev = () => setActiveSlide((current) => clampIndex(current - 1));
+  const goToNext = () => setActiveSlide((current) => clampIndex(current + 1));
+
   return (
     <section id="docente" className="section-pad about-teacher">
       <div className="container about-teacher__grid">
         <Reveal className="about-teacher__portrait">
           <div className="about-teacher__frame">
             <img
-              src={maglynertPortrait}
+              src={maglynertSolo}
               alt="Maglynert Montero Baptista"
               className="about-teacher__photo"
             />
@@ -188,6 +191,16 @@ export default function AboutTeacher() {
         </p>
 
         <div className="about-teacher__carousel">
+          <button
+            type="button"
+            className="about-teacher__carousel-arrow about-teacher__carousel-arrow--prev"
+            onClick={goToPrev}
+            disabled={activeSlide === 0}
+            aria-label="Foto anterior"
+          >
+            ‹
+          </button>
+
           <div className="about-teacher__carousel-viewport">
             <div
               ref={trackRef}
@@ -219,6 +232,16 @@ export default function AboutTeacher() {
               ))}
             </div>
           </div>
+
+          <button
+            type="button"
+            className="about-teacher__carousel-arrow about-teacher__carousel-arrow--next"
+            onClick={goToNext}
+            disabled={activeSlide === GALLERY.length - 1}
+            aria-label="Foto siguiente"
+          >
+            ›
+          </button>
         </div>
 
         <p className="about-teacher__carousel-photo-caption">
