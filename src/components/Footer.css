@@ -15,7 +15,7 @@
 
 .site-footer__logo {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: 1.5rem;
   color: var(--white-warm);
 }
@@ -24,9 +24,16 @@
   color: var(--purple-300);
 }
 
-.site-footer__brand p:last-child {
+.site-footer__logo-cariologia {
+  font-style: italic;
+}
+
+.site-footer__tagline {
   margin-top: 0.4rem;
+  font-family: var(--font-display);
+  font-style: italic;
   font-size: 0.85rem;
+  color: var(--purple-300);
 }
 
 .site-footer__nav {

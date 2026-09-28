@@ -9,8 +9,9 @@ export default function Footer() {
         <div className="site-footer__brand">
           <p className="site-footer__logo">
             Actualízate<span>.</span>
+            <em className="site-footer__logo-cariologia"> Cariología</em>
           </p>
-          <p>Cariología… y algo más.</p>
+          <p className="site-footer__tagline">…y algo más.</p>
         </div>
 
         <nav className="site-footer__nav" aria-label="Navegación de pie de página">
