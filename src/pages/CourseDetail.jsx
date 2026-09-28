@@ -22,8 +22,10 @@ export default function CourseDetail() {
   }
 
   const currentIndex = courses.findIndex((c) => c.slug === slug);
-  const next = courses[(currentIndex + 1) % courses.length];
-  const prev = courses[(currentIndex - 1 + courses.length) % courses.length];
+  const isFirstCourse = currentIndex === 0;
+  const isLastCourse = currentIndex === courses.length - 1;
+  const next = isLastCourse ? null : courses[currentIndex + 1];
+  const prev = isFirstCourse ? null : courses[currentIndex - 1];
 
   return (
     <article className="course-detail">
@@ -118,35 +120,52 @@ export default function CourseDetail() {
         </div>
 
         <nav className="course-detail__pagination" aria-label="Navegación entre cursos">
-          <Link
-            to={`/cursos/${prev.slug}`}
-            className="course-detail__nav-link course-detail__nav-link--prev"
-          >
-            <span className="course-detail__nav-arrow" aria-hidden="true">
-              ←
-            </span>
-            <span className="course-detail__nav-text">
-              <span>Curso anterior</span>
-              <strong>
-                Curso {prev.number} — {prev.title}
-              </strong>
-            </span>
-          </Link>
+          {prev && (
+            <Link
+              to={`/cursos/${prev.slug}`}
+              className="course-detail__nav-link course-detail__nav-link--prev"
+            >
+              <span className="course-detail__nav-arrow" aria-hidden="true">
+                ←
+              </span>
+              <span className="course-detail__nav-text">
+                <span>Curso anterior</span>
+                <strong>
+                  Curso {prev.number} — {prev.title}
+                </strong>
+              </span>
+            </Link>
+          )}
 
-          <Link
-            to={`/cursos/${next.slug}`}
-            className="course-detail__nav-link course-detail__nav-link--next"
-          >
-            <span className="course-detail__nav-text">
-              <span>Siguiente curso</span>
-              <strong>
-                Curso {next.number} — {next.title}
-              </strong>
-            </span>
-            <span className="course-detail__nav-arrow" aria-hidden="true">
-              →
-            </span>
-          </Link>
+          {next ? (
+            <Link
+              to={`/cursos/${next.slug}`}
+              className="course-detail__nav-link course-detail__nav-link--next"
+            >
+              <span className="course-detail__nav-text">
+                <span>Siguiente curso</span>
+                <strong>
+                  Curso {next.number} — {next.title}
+                </strong>
+              </span>
+              <span className="course-detail__nav-arrow" aria-hidden="true">
+                →
+              </span>
+            </Link>
+          ) : (
+            <Link
+              to="/#cursos"
+              className="course-detail__nav-link course-detail__nav-link--next course-detail__nav-link--finish"
+            >
+              <span className="course-detail__nav-text">
+                <span>Fin del programa</span>
+                <strong>Terminar y volver al programa académico</strong>
+              </span>
+              <span className="course-detail__nav-arrow" aria-hidden="true">
+                ✓
+              </span>
+            </Link>
+          )}
         </nav>
       </div>
     </article>
