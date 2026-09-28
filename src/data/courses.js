@@ -8,6 +8,17 @@
 // muestran como "Información próximamente" y deben completarse más
 // adelante.
 
+import curso01 from "../assets/courses/curso-01.jpg";
+import curso02 from "../assets/courses/curso-02.jpg";
+import curso03 from "../assets/courses/curso-03.webp";
+import curso04 from "../assets/courses/curso-04.jpg";
+import curso05 from "../assets/courses/curso-05.jpg";
+import curso06 from "../assets/courses/curso-06.jpg";
+import curso07 from "../assets/courses/curso-07.jpg";
+import curso08 from "../assets/courses/curso-08.jpg";
+import curso09 from "../assets/courses/curso-09.jpg";
+import curso10 from "../assets/courses/curso-10.webp";
+
 export const TBD = "Información próximamente";
 
 export const COMMON_PROGRAM_INFO = {
@@ -25,6 +36,7 @@ export const courses = [
     id: 1,
     slug: "cariologia-contemporanea",
     number: "01",
+    image: curso01,
     title:
       "Cariología contemporánea: comprendiendo la enfermedad de caries dental",
     shortDescription:
@@ -50,6 +62,7 @@ export const courses = [
     id: 2,
     slug: "deteccion-clasificacion-lesiones",
     number: "02",
+    image: curso02,
     title: "Detección y clasificación de las lesiones de caries",
     shortDescription:
       "Criterios actuales para reconocer y clasificar lesiones de caries de forma sistemática.",
@@ -62,6 +75,7 @@ export const courses = [
     id: 3,
     slug: "diagnostico-diferencial-lesiones-defectos",
     number: "03",
+    image: curso03,
     title:
       "Diagnóstico diferencial de las lesiones de caries y defectos del esmalte",
     shortDescription:
@@ -75,6 +89,7 @@ export const courses = [
     id: 4,
     slug: "evaluacion-individual-riesgo",
     number: "04",
+    image: curso04,
     title: "Evaluación individual del riesgo de caries",
     shortDescription:
       "Metodología para valorar el riesgo de caries de cada paciente de forma individualizada.",
@@ -87,6 +102,7 @@ export const courses = [
     id: 5,
     slug: "manejo-minimamente-invasivo-no-cavitadas",
     number: "05",
+    image: curso05,
     title:
       "Manejo mínimamente invasivo de las lesiones de caries no cavitadas",
     shortDescription:
@@ -100,6 +116,7 @@ export const courses = [
     id: 6,
     slug: "manejo-minimamente-invasivo-cavitadas",
     number: "06",
+    image: curso06,
     title: "Manejo mínimamente invasivo de las lesiones de caries cavitadas",
     shortDescription:
       "Criterios y técnicas conservadoras para el tratamiento de lesiones cavitadas.",
@@ -112,6 +129,7 @@ export const courses = [
     id: 7,
     slug: "tratamientos-remineralizantes",
     number: "07",
+    image: curso07,
     title: "Tratamientos remineralizantes: cuándo, cómo y por qué utilizarlos",
     shortDescription:
       "Criterios clínicos para incorporar la remineralización en el plan de tratamiento.",
@@ -124,6 +142,7 @@ export const courses = [
     id: 8,
     slug: "peptidos-autoensamblables",
     number: "08",
+    image: curso08,
     title: "Péptidos autoensamblables en Cariología",
     shortDescription:
       "Una mirada a esta tecnología emergente y su papel en el manejo de la caries.",
@@ -136,6 +155,7 @@ export const courses = [
     id: 9,
     slug: "buscar-evaluar-evidencia-cientifica",
     number: "09",
+    image: curso09,
     title: "Cómo buscar y evaluar evidencia científica en Cariología",
     shortDescription:
       "Herramientas prácticas para localizar y valorar la literatura científica disponible.",
@@ -148,6 +168,7 @@ export const courses = [
     id: 10,
     slug: "cariologia-basada-evidencia",
     number: "10",
+    image: curso10,
     title: "Cariología basada en la evidencia científica",
     shortDescription:
       "Integrar la evidencia disponible en la toma de decisiones clínicas diarias.",

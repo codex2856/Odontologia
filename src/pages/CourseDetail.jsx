@@ -46,6 +46,12 @@ export default function CourseDetail() {
       </header>
 
       <div className="container course-detail__body">
+        {course.image && (
+          <Reveal className="course-detail__image-frame">
+            <img src={course.image} alt="" className="course-detail__image" />
+          </Reveal>
+        )}
+
         <div className="course-detail__grid">
           <div className="course-detail__main">
             <Reveal as="section" aria-labelledby="descripcion">

@@ -6,6 +6,9 @@ export default function CourseCard({ course, delayMs = 0 }) {
   return (
     <Reveal as="article" className="course-card" delay={delayMs}>
       <Link to={`/cursos/${course.slug}`} className="course-card__media" aria-hidden="true" tabIndex={-1}>
+        {course.image && (
+          <img src={course.image} alt="" className="course-card__image" loading="lazy" />
+        )}
         <span className="course-card__number">{course.number}</span>
       </Link>
 
